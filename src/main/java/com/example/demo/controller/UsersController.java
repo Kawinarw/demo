@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.UsersEntity;
+import com.example.demo.model.UserModel;
 import com.example.demo.repository.UsersRepository;
 import com.example.demo.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,8 @@ public class UsersController {
     }
 
     @PostMapping("/users")
-    public String addUser(@RequestBody UsersEntity user) {
-        usersService.save(user);
+    public String addUser(@RequestBody UserModel user) {
+        usersService.save(user.toEntity(user));
         return "Added user";
     }
 

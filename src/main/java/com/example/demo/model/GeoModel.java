@@ -1,22 +1,27 @@
 package com.example.demo.model;
 
 public class GeoModel{
-    private String geoLat;
-    private String geoLng;
+    private String lat;
+    private String lng;
 
-    public String getGeoLat() {
-        return geoLat;
+    public GeoModel(String lat, String lng) {
+        this.lat = lat;
+        this.lng = lng;
     }
 
-    public void setGeoLat(String geoLat) {
-        this.geoLat = geoLat;
+    public String getLat() {
+        return lat;
     }
 
-    public String getGeoLng() {
-        return geoLng;
+    public void setLat(String lat) {
+        this.lat = lat;
     }
 
-    public void setGeoLng(String geoLng) {
-        this.geoLng = geoLng;
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
     }
 }

@@ -5,6 +5,12 @@ public class CompanyModel{
     private String catchPhrase;
     private String bs;
 
+    public CompanyModel(String name, String catchPhrase, String bs) {
+        this.name = name;
+        this.catchPhrase = catchPhrase;
+        this.bs = bs;
+    }
+
     public String getName() {
         return name;
     }

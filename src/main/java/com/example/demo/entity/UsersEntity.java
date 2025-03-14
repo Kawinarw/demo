@@ -21,7 +21,9 @@ public class UsersEntity {
     private String addressCity;
     @Column(name = "zipcode")
     private String addressZipcode;
+    @Column(name = "lat")
     private String geoLat;
+    @Column(name = "lng")
     private String geoLng;
     private String phone;
     private String website;
